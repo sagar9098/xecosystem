@@ -5,9 +5,9 @@ homepage: https://github.com/sagar9098/xecosystem
 repository: https://github.com/sagar9098/xecosystem
 issue_tracker: https://github.com/sagar9098/xecosystem/issues
 screenshots:
-  - description: Login Screen
+  - description: Login screen with email and password fields
     path: screenshots/login.png
-  - description: Dashboard
+  - description: Dashboard screen showing user profile card with API data
     path: screenshots/dashboard.png
 environment:
   sdk: '>=3.0.0 <4.0.0'
