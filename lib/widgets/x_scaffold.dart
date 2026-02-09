@@ -6,6 +6,7 @@ class XScaffold extends StatelessWidget {
   final Widget body;
   final List<Widget>? actions;
   final bool noAppBar;
+  final bool noSafeArea;
 
   const XScaffold({
     super.key,
@@ -13,6 +14,7 @@ class XScaffold extends StatelessWidget {
     required this.body,
     this.actions,
     this.noAppBar = false,
+    this.noSafeArea = false,
   });
 
   double _padding(BuildContext context) {
@@ -33,8 +35,9 @@ class XScaffold extends StatelessWidget {
     if (noAppBar) return Scaffold(body: SafeArea(child: child));
 
     return Scaffold(
-      appBar: AppBar(title: title != null ? Text(title!) : null, actions: actions),
-      body: SafeArea(child: child),
+      appBar:
+          AppBar(title: title != null ? Text(title!) : null, actions: actions),
+      body: noSafeArea ? child : SafeArea(child: child),
     );
   }
 }

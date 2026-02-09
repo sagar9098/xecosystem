@@ -1,3 +1,5 @@
+import 'package:xecosystem/core/api.dart';
+
 class ProfileCubit extends Cubit<AsyncValue<XResponse<Map>>> {
   ProfileCubit() : super(const AsyncValue.loading());
   Future<void> fetch() async {

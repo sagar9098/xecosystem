@@ -19,7 +19,8 @@ class XButton extends StatelessWidget {
       onPressed: loading ? null : onPressed,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: XTokens.md),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(XTokens.md)),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(XTokens.md)),
       ),
       child: loading
           ? const SizedBox(

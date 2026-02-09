@@ -13,7 +13,8 @@ class XInput extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         labelText: label,
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(XTokens.md)),
+        border:
+            OutlineInputBorder(borderRadius: BorderRadius.circular(XTokens.md)),
         contentPadding: const EdgeInsets.all(XTokens.md),
       ),
     );
